@@ -43,4 +43,4 @@ O que eu vi nos dados:
 
 Python (pandas, matplotlib, seaborn), scikit-learn, Google Colab.
 
-Python (pandas, matplotlib, seaborn), scikit-learn, Google Colab.
+
