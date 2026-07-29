@@ -22,8 +22,22 @@ Cada linha é uma turma de clientes agrupada pelo mes da primeira compra.
 As colunas mostram quantos % voltaram 1, 2, 3... meses depois. Quanto mais
 escuro, mais gente voltou.
 
-[AQUI ENTRAM OS TEUS ACHADOS - escreve com as tuas palavras o que você
-viu no gráfico: a queda do primeiro mes, a turma de dez/2009, o Natal]
+O que eu vi nos dados:
+
+- A retenção despenca logo no primeiro mes: de 100% pra uma faixa de 14% a
+  35%, dependendo da turma. Ou seja, a maior parte dos clientes compra uma
+  vez e não volta. O desafio real dessa loja não é atrair cliente, é
+  conseguir a segunda compra.
+- A turma de dez/2009 é diferente de todas as outras. Ela segura retenção
+  entre 26% e 43% por dois anos e chega a bater 50% no decimo mes. Como
+  dez/2009 é o primeiro mes do dataset, minha leitura é que essa turma
+  carrega os clientes antigos da loja, muitos deles atacadistas que
+  recompram todo mes por necessidade.
+- Tem sazonalidade clara: em varias turmas a retenção volta a subir entre
+  setembro e outubro. Faz sentido pra uma loja de artigos de presente,
+  os revendedores voltam pra montar estoque de fim de ano.
+- A turma de dez/2010 foi a pior de todas, rodando entre 3% e 12% quase
+  o tempo inteiro.
 
 ## Ferramentas
 
