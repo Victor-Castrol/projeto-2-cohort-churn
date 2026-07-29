@@ -29,3 +29,15 @@ quantidade, data, preço e código do cliente.
 Em desenvolvimento.
 
 ![Heatmap de retenção por cohort](heatmap_retencao.png)
+
+
+## O que os dados mostraram
+
+- Quase todo mundo some depois da primeira compra. A retenção cai de 100% pra
+  algo entre 14% e 35% logo no primeiro mes. O problema real da loja é fazer
+  o cliente voltar pela segunda vez.
+- A turma de dez/2009 é fora da curva. Enquanto as outras seguram uns 10-25%,
+  essa fica entre 26% e 50% durante dois anos. Minha leitura: são os
+  atacadistas antigos da loja, que já compravam antes e recompram todo mes.
+- Perto de setembro/outubro a retenção sobe em várias turmas. Faz sentido,
+  é loja de presente, o pessoal volta pra montar estoque de Natal.
