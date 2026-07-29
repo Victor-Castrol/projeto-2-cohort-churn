@@ -27,3 +27,5 @@ quantidade, data, preço e código do cliente.
 
 # Status
 Em desenvolvimento.
+
+[Heatmap de retenção por cohort](heatmap_retencao.png)
