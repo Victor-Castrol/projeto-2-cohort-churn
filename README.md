@@ -1,47 +1,30 @@
 # Análise de Cohort e Previsão de Churn — E-commerce
-Segundo projeto do meu portfólio de dados. A ideia é entender o comportamento
-de recompra dos clientes de um e-commerce e, a partir disso, treinar um modelo
-que aponta quais clientes têm maior risco de abandonar a loja.
 
-# Perguntas que o projeto responde
-- Quantos clientes voltam a comprar depois da primeira compra?
-- Como a retenção varia entre grupos de clientes (cohorts) mês a mês?
-- Quais clientes têm maior probabilidade de churn nos próximos 90 dias?
+Segundo projeto do meu portfólio de dados. Peguei as transações de um
+e-commerce do Reino Unido (Online Retail II, ~1 milhão de linhas entre
+2009 e 2011) pra entender quantos clientes voltam a comprar depois da
+primeira compra e, na sequência, treinar um modelo que aponta quem tá
+prestes a abandonar a loja.
 
-# Dataset
-Online Retail II: transações de um e-commerce do Reino Unido entre 2009 e 2011,
-com cerca de 1 milhão de linhas. As colunas incluem número da fatura, produto,
-quantidade, data, preço e código do cliente.
+## Etapas
 
-# Etapas
-1. Limpeza dos dados (devoluções, valores nulos, registros inválidos)
-2. Análise de cohort com heatmap de retenção mensal
+1. Limpeza dos dados (devoluções, valores nulos, registros inválidos) — feito
+2. Análise de cohort com heatmap de retenção mensal — feito
 3. Criação de variáveis RFM (recência, frequência, valor monetário)
 4. Definição de churn e treino do modelo Random Forest
 5. Avaliação do modelo e análise das variáveis mais importantes
 
-# Ferramentas
-- Python (pandas, matplotlib, seaborn)
-- scikit-learn
-- Google Colab
-
-# Status
-Em desenvolvimento.
+## Retenção por cohort
 
 ![Heatmap de retenção por cohort](heatmap_retencao.png)
 
+Cada linha é uma turma de clientes agrupada pelo mes da primeira compra.
+As colunas mostram quantos % voltaram 1, 2, 3... meses depois. Quanto mais
+escuro, mais gente voltou.
 
-## O que os dados mostraram
+[AQUI ENTRAM OS TEUS ACHADOS - escreve com as tuas palavras o que você
+viu no gráfico: a queda do primeiro mes, a turma de dez/2009, o Natal]
 
-Cada linha do heatmap é uma turma de clientes, agrupada pelo mes da primeira
-compra. As colunas mostram quantos % dessa turma voltaram a comprar 1, 2, 3...
-meses depois. Quanto mais escuro, mais gente voltou.
+## Ferramentas
 
-- Quase todo mundo some depois da primeira compra. A retenção cai de 100% pra
-  algo entre 14% e 35% logo no primeiro mes. O problema real da loja é fazer
-  o cliente voltar pela segunda vez.
-- A turma de dez/2009 é fora da curva. Enquanto as outras seguram uns 10-25%,
-  essa fica entre 26% e 50% durante dois anos. Minha leitura: são os
-  atacadistas antigos da loja, que já compravam antes e recompram todo mes.
-- Perto de setembro/outubro a retenção sobe em várias turmas. Faz sentido,
-  é loja de presente, o pessoal volta pra montar estoque de Natal.
+Python (pandas, matplotlib, seaborn), scikit-learn, Google Colab.
