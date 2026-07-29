@@ -33,6 +33,10 @@ Em desenvolvimento.
 
 ## O que os dados mostraram
 
+Cada linha do heatmap é uma turma de clientes, agrupada pelo mes da primeira
+compra. As colunas mostram quantos % dessa turma voltaram a comprar 1, 2, 3...
+meses depois. Quanto mais escuro, mais gente voltou.
+
 - Quase todo mundo some depois da primeira compra. A retenção cai de 100% pra
   algo entre 14% e 35% logo no primeiro mes. O problema real da loja é fazer
   o cliente voltar pela segunda vez.
