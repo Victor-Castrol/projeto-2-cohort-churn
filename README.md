@@ -1,4 +1,4 @@
- Análise de Cohort e Previsão de Churn — E-commerce
+## Análise de Cohort e Previsão de Churn — E-commerce
 
 Segundo projeto do meu portfólio de dados. Peguei as transações de um
 e-commerce do Reino Unido (Online Retail II, cerca de 1 milhão de linhas
@@ -6,7 +6,7 @@ entre 2009 e 2011) pra entender quantos clientes voltam a comprar depois
 da primeira compra e, na sequência, treinar um modelo que aponta quais
 clientes têm maior risco de abandonar a loja.
 
- Etapas
+## Etapas
 
 1. Limpeza dos dados (devoluções, valores nulos, registros inválidos) — feito
 2. Análise de cohort com heatmap de retenção mensal — feito
@@ -14,7 +14,7 @@ clientes têm maior risco de abandonar a loja.
 4. Features comportamentais + treino do modelo Random Forest — feito
 5. Avaliação do modelo e análise das variáveis mais importantes — feito
 
- Retenção por cohort
+## Retenção por cohort
 
 ![Heatmap de retenção por cohort](heatmap_retencao.png)
 
@@ -39,8 +39,7 @@ O que eu vi nos dados:
   tempo inteiro. Provavelmente cliente de Natal: comprou presente uma vez
   e nunca mais apareceu.
 
-
- Previsão de churn
+## Previsão de churn
 
 Depois do cohort, o passo seguinte foi prever quais clientes ativos têm
 maior risco de abandonar a loja. Separei os dados em dois períodos: o
@@ -52,7 +51,7 @@ Além do RFM tradicional, criei variáveis de comportamento: variedade de
 produtos comprados, ticket médio, ritmo de compra em dias e tempo como
 cliente.
 
-Resultado do Random Forest:
+## Resultado do Random Forest:
 
 - AUC-ROC de 0.79
 - Recall de 82% na classe churn: de cada 100 clientes que realmente
@@ -72,7 +71,7 @@ O que eu vi nos dados:
   compra e o tempo como cliente capturam a mesma informação de forma
   mais rica.
 
- Ferramentas
+## Ferramentas
 
 Python (pandas, matplotlib, seaborn), scikit-learn, Google Colab.
 
