@@ -13,11 +13,11 @@ que criei respondendo por metade do poder preditivo.
 
 ## Etapas
 
-1. Limpeza dos dados (devoluções, valores nulos, registros inválidos) — feito
-2. Análise de cohort com heatmap de retenção mensal — feito
-3. Criação de variáveis RFM (recência, frequência, valor monetário) — feito
-4. Features comportamentais + treino do modelo Random Forest — feito
-5. Avaliação do modelo e análise das variáveis mais importantes — feito
+1. Limpeza dos dados (devoluções, valores nulos, registros inválidos) 
+2. Análise de cohort com heatmap de retenção mensal 
+3. Criação de variáveis RFM (recência, frequência, valor monetário) 
+4. Features comportamentais + treino do modelo Random Forest 
+5. Avaliação do modelo e análise das variáveis mais importantes 
 
 ## Retenção por cohort
 
