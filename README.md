@@ -1,7 +1,7 @@
 # Análise de Cohort e Previsão de Churn — E-commerce
 
 Segundo projeto do meu portfólio de dados. Peguei as transações de um
-e-commerce do Reino Unido ([Online Retail II])(https://archive.ics.uci.edu/dataset/502/online+retail+ii),
+e-commerce do Reino Unido([Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii),
 cerca de 1 milhão de linhas entre 2009 e 2011) pra entender quantos
 clientes voltam a comprar depois da primeira compra e, na sequência,
 treinar um modelo que aponta quais clientes têm maior risco de abandonar
