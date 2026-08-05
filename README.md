@@ -1,4 +1,4 @@
-# Análise de Cohort e Previsão de Churn — E-commerce
+ Análise de Cohort e Previsão de Churn — E-commerce
 
 Segundo projeto do meu portfólio de dados. Peguei as transações de um
 e-commerce do Reino Unido (Online Retail II, cerca de 1 milhão de linhas
@@ -6,15 +6,15 @@ entre 2009 e 2011) pra entender quantos clientes voltam a comprar depois
 da primeira compra e, na sequência, treinar um modelo que aponta quais
 clientes têm maior risco de abandonar a loja.
 
-## Etapas
+ Etapas
 
 1. Limpeza dos dados (devoluções, valores nulos, registros inválidos) — feito
 2. Análise de cohort com heatmap de retenção mensal — feito
-3. Criação de variáveis RFM (recência, frequência, valor monetário)
-4. Definição de churn e treino do modelo Random Forest
-5. Avaliação do modelo e análise das variáveis mais importantes
+3. Criação de variáveis RFM (recência, frequência, valor monetário) — feito
+4. Features comportamentais + treino do modelo Random Forest — feito
+5. Avaliação do modelo e análise das variáveis mais importantes — feito
 
-## Retenção por cohort
+ Retenção por cohort
 
 ![Heatmap de retenção por cohort](heatmap_retencao.png)
 
@@ -39,7 +39,40 @@ O que eu vi nos dados:
   tempo inteiro. Provavelmente cliente de Natal: comprou presente uma vez
   e nunca mais apareceu.
 
-## Ferramentas
+
+ Previsão de churn
+
+Depois do cohort, o passo seguinte foi prever quais clientes ativos têm
+maior risco de abandonar a loja. Separei os dados em dois períodos: o
+passado gera as variáveis do modelo, o futuro serve só pra observar quem
+de fato deu churn. Sem essa separação o modelo enxergaria o futuro e os
+números sairiam inflados (data leakage).
+
+Além do RFM tradicional, criei variáveis de comportamento: variedade de
+produtos comprados, ticket médio, ritmo de compra em dias e tempo como
+cliente.
+
+Resultado do Random Forest:
+
+- AUC-ROC de 0.79
+- Recall de 82% na classe churn: de cada 100 clientes que realmente
+  abandonariam a loja, o modelo pega 82 antes de irem embora
+- As variáveis comportamentais respondem por 49% do poder preditivo do
+  modelo. O RFM sozinho não capturava metade da história.
+
+![Importância das variáveis](feature_importance.png)
+
+O que eu vi nos dados:
+
+- Dias desde a última compra segue sendo o fator mais forte (23.6%), mas
+  variedade de produtos e ticket médio juntos pesam mais que o valor
+  total gasto. Cliente que compra pouca variedade tende a sumir, mesmo
+  gastando bem.
+- Frequência bruta virou a variável menos importante (8.8%). O ritmo de
+  compra e o tempo como cliente capturam a mesma informação de forma
+  mais rica.
+
+ Ferramentas
 
 Python (pandas, matplotlib, seaborn), scikit-learn, Google Colab.
 
